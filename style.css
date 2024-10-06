@@ -1,0 +1,127 @@
+
+.container{
+	display: flex;
+	overflow:hidden;
+	height: 90vh;
+	margin: 0;
+	width: 100vw;
+	justify-content: space-evenly;
+}
+.video-container {
+	display: flex;
+	/* background-color: red; */
+	padding: 5px;
+	margin: 10px;
+	/* min-height: 30vh; */
+	/* max-width: 120vw; */
+	flex-wrap: wrap-reverse;
+	height: 90vh;
+	width: 90vh;
+	/*animation: 4s linear 0s infinite alternate-reverse glow;
+	/* justify-content: space-evenly; */
+	background: radial-gradient(#882266 10%, #662266 20%, transparent 70%);
+	/* box-shadow: 0px 5px black; */
+	/* overflow: hidden; */
+	justify-content: space-evenly;
+	align-content: space-around;
+}
+
+@keyframes glow{
+	from{
+		background: radial-gradient(#882266 10%, #662266 20%, transparent 70%);
+	}
+	to{
+		background: radial-gradient(#b73d8f 20%, #662266 30%, transparent 70%);
+	}
+
+}
+
+lite-youtube {
+	margin: 5px;
+	/* contain: paint; */
+	flex-basis: 40%; /* or a specific width */
+	flex-grow: 2;
+	flex-shrink: 3;
+	/* max-width: 100%; */
+	/* max-height: fit-content; */
+	min-width: 25px;
+	/*max-width: 700px;
+	box-shadow: 0px 0px 50px 10px #933e6fb3;
+	/* height: fit-content; */
+	/* width: 5vw; */
+	/* filter: hue-rotate(150deg); */
+	animation: spin 92s alternate-reverse ease-in-out infinite;
+	box-shadow: 0px 0px 50px 10px #933e6fb3;
+	/*animation: spin 92s linear alternate-reverse infinite;*/
+}
+
+body {
+	background: linear-gradient(2deg, black 30%, #662266);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	max-height: 100vh;
+	margin: 0px;
+	flex-wrap: nowrap;
+	align-content: center;
+}
+
+.controls{
+background: linear-gradient(hsl(0deg 0% 93.33% / 62%), #ffffff1c 70%, #00000000);
+margin: 20px;
+padding: 5px;
+box-sizing: content-box;
+/* max-width: 80%; */
+display: inline-block;
+justify-self: center;
+flex-wrap: wrap;
+flex-direction: row;
+flex-grow: 0;
+align-items: stretch;
+justify-items: end;
+display: flex;
+}
+
+input,button {
+background-color: black;
+border-color: #ff00ffa6;
+color: white;
+}
+
+input[type="number"] {
+/* max-width: 10%; */ /* Adjust as needed */
+width: 40px;
+display: inline;
+}
+
+input[type="text"] {
+max-width: 200px;
+}
+
+button {
+/* max-width: 30%; */
+}
+
+.input-group {
+margin-inline: 5px;
+display: inline-block;
+ /* Vertically align the label and input */
+ /* Add some space between groups */
+margin: 2px;
+width: auto;
+}
+
+@keyframes throb {
+	0% { scale: 0.8; }
+	50% {scale: 1.4;}
+	100% { scale: 0.8; }
+}
+
+@keyframes spin {
+	0% { rotate: 0deg; }
+	100% { rotate: 360deg; }
+}
+
+
+
