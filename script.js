@@ -45,6 +45,7 @@ fadeTimeInput.addEventListener('input', () => {
 		maxFadeTimeInput.labels[0].textContent = `Max Fade Time: ${inputString(maxFadeTimeInput.value,maxMaxFadeTime)} s`;
 	}
 });
+
 maxFadeTimeInput.addEventListener('input', () => {
   maxFadeTimeInput.labels[0].textContent = `Max Fade Time: ${inputString(maxFadeTimeInput.value,maxMaxFadeTime)} s`;
 	if(fadeTimeInput.value > maxFadeTimeInput.value){
@@ -52,6 +53,7 @@ maxFadeTimeInput.addEventListener('input', () => {
 		fadeTimeInput.labels[0].textContent = `Min Fade Time: ${inputString(fadeTimeInput.value,maxMinFadeTime)} s`;
 	}
 });
+
 maxVideosInput.addEventListener('input', () => {
   maxVideosInput.labels[0].textContent = `Max Videos: ${Math.floor(maxVideosInput.value)}/${videos.length}`;
 });
