@@ -37,6 +37,7 @@ demoButton.addEventListener('click', () => {
 intervalInput.addEventListener('input', () => {
   intervalInput.labels[0].textContent = `Morph time: ${inputString(intervalInput.value,maxMorphTime)} s`;
 });
+
 fadeTimeInput.addEventListener('input', () => {
 	fadeTimeInput.labels[0].textContent = `Min Fade Time: ${inputString(fadeTimeInput.value,maxMinFadeTime)} s`;
 	if(inputScale(fadeTimeInput.value,maxMinFadeTime) > inputScale(maxFadeTimeInput.value,maxMaxFadeTime)){ //aww fuck this is weird
