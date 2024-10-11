@@ -320,6 +320,7 @@ requestAnimationFrame(animateAllVolumes);
 function scalelog(x){
 return 2 * x - (x*x);
 }
+
 function scaleexp(x) {
 return (x + x*x)/2;
 }
